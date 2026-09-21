@@ -1,0 +1,72 @@
+/* GENERAL */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* NAVBAR */
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 2rem;
+
+    border-bottom: 1px solid #ccc;
+}
+
+#nav-links {
+    display: flex;
+    gap: 1.5rem;
+
+    list-style: none;
+}
+
+#nav-links a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* SECTIONS */
+
+section {
+    padding: 5rem 2rem;
+}
+
+
+/* HERO */
+
+#home {
+    text-align: center;
+    padding: 8rem 2rem;
+}
+
+
+/* BOOKS */
+
+.book-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.book {
+    border: 1px solid #ccc;
+    padding: 2rem;
+}
+
+
+/* FOOTER */
+
+#footer {
+    padding: 2rem;
+
+    border-top: 1px solid #ccc;
+}
