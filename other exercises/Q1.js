@@ -83,7 +83,7 @@ console.log(typeof(Infinity));
 
 // 19. 1 == '1'
 console.log(1 + '1');
-
+    
 // 20. 1 === '1'
 console.log(1 === '1');
 
