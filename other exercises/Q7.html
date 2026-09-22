@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q7</title>
+</head>
+<body>
+    <script>
+        function checkAge(){
+            let birthYear = prompt("Enter the birth year:");
+            let age = new Date().getFullYear() - birthYear;
+            //new Date() to take today's date
+            //getFullYear() to take the year from the Date()
+
+            if (age > 60) {
+                alert("You may join the seniors' program.");
+            }
+            else if (age > 30) {
+                alert("You are not eligible. You may join other programs.");
+            }
+            else if (age >= 18) {
+                alert("You are eligible. Start your application.");
+            }
+            else {
+                alert("You may join the kids' program.");
+            }
+        }
+        checkAge();
+
+    </script>
+</body>
+</html>
+<!--------------------------
+-        JS Exercise       -
+-    Q7 by Asem Al-Zaghal  -
+--------------------------->
