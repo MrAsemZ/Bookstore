@@ -9,9 +9,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-#form-error{
-     color: red;
-}
+
 /* NAVBAR */
 
 #navbar {
@@ -47,21 +45,13 @@ section {
 /* HERO */
 
 #home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     text-align: center;
-    height: 72vh;
+    padding: 8rem 2rem;
 }
 
 
 /* BOOKS */
 
-#bookstore-form{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
 .book-container {
     display: flex;
     gap: 1rem;
@@ -72,15 +62,11 @@ section {
     padding: 2rem;
 }
 
-.error{
-    color: red;
-    font-size: 18px;
-}
 
 /* FOOTER */
 
 #footer {
     padding: 2rem;
-    margin: 4px;
+
     border-top: 1px solid #ccc;
 }
