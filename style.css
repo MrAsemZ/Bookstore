@@ -47,13 +47,21 @@ section {
 /* HERO */
 
 #home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    padding: 8rem 2rem;
+    height: 72vh;
 }
 
 
 /* BOOKS */
 
+#bookstore-form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 .book-container {
     display: flex;
     gap: 1rem;
@@ -64,11 +72,15 @@ section {
     padding: 2rem;
 }
 
+.error{
+    color: red;
+    font-size: 18px;
+}
 
 /* FOOTER */
 
 #footer {
     padding: 2rem;
-
+    margin: 4px;
     border-top: 1px solid #ccc;
 }
