@@ -50,8 +50,9 @@ function handleBookstoreSubmit(event) {
     const membershipType = validateMembership(membershipInput);
 
     if (!membershipType) {
-        alert("Membership type must be Student or Regular.");
-        return;
+        document.getElementById("form-error").textContent =
+        "Membership type must be Student or Regular.";
+    return;
     }
 
 
