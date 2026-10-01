@@ -1,0 +1,91 @@
+/* General page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px 90px;
+    color: #333;
+}
+
+/* Main heading */
+h1 {
+    color: #0000cc;
+    font-size: 42px;
+    margin-bottom: 25px;
+}
+
+#addResult{
+    color: lawngreen;
+}
+
+/* Form */
+form {
+    font-size: 20px;
+}
+
+/* Inputs */
+input {
+    display: block;
+    margin-left: 95px;
+    margin-top: -25px;
+    margin-bottom: 10px;
+
+    width: 270px;
+    height: 30px;
+    font-size: 18px;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+
+/* Buttons */
+button {
+    font-size: 16px;
+    padding: 6px 12px;
+    margin-right: 25px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+/* Section headings */
+h3 {
+    color: #0000cc;
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* Result paragraphs */
+p {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+/* Scores area */
+div {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 150px;
+}
+
+/* Name / Score labels */
+div b {
+    font-size: 20px;
+}
+
+/* Lists */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 8px;
+}
+
+li {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+#container{
+    padding: 15px;
+    width: 70%;
+    border: 2px solid #0000cc;
+    padding-left: 50px;
+}

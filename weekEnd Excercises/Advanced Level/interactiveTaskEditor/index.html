@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Text Editor</title>
+    <!-- Google Fonts for custom font family support -->
+    <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Arial&family=Verdana&family=Courier+New&family=Times+New+Roman&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="editor-container">
+        <h1>Interactive Text Editor</h1>
+
+        <!-- Display Box matching the reference image layout and initial state -->
+        <div id="displayBox" class="display-box" contenteditable="true" spellcheck="false">HELLO</div>
+
+        <!-- Control Panel Container -->
+        <div class="control-panel">
+            
+            <!-- Row 1: Formatting & Alignment Buttons -->
+            <div class="button-row">
+                <button id="btnBold" class="btn-custom " onclick="toggleBold()">Bold</button>
+                <button id="btnItalic" class="btn-custom" onclick="toggleItalic()">Italic</button>
+                <button id="btnLeft" class="btn-custom" onclick="setAlignment('flex-start')">Left</button>
+                <button id="btnCenter" class="btn-custom active" onclick="setAlignment('center')">Center</button>
+                <button id="btnRight" class="btn-custom" onclick="setAlignment('flex-end')">Right</button>
+            </div>
+
+            <!-- Row 2: Text Transformation & Clear Buttons -->
+            <div class="button-row">
+                <button class="btn-custom" onclick="transformText('uppercase')">Upper Case</button>
+                <button class="btn-custom" onclick="transformText('lowercase')">Lower Case</button>
+                <button class="btn-custom" onclick="transformText('capitalize')">Capitalize</button>
+                <button class="btn-custom btn-dark" onclick="clearText()">Clear Text</button>
+            </div>
+
+            <!-- Row 3: Color Pickers -->
+            <div class="controls-row">
+                <div class="control-group">
+                    <label for="textColorInput">Text Color:</label>
+                    <div class="color-picker-wrapper">
+                        <div id="textColorPreview" class="color-preview-box" style="background-color: #8b0000;"></div>
+                        <input type="color" id="textColorInput" value="#8b0000" oninput="updateTextColor(this.value)">
+                    <!--    //? we do type="color" to show the color panel--->
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label for="bgColorInput">Background:</label>
+                    <div class="color-picker-wrapper">
+                        <div id="bgColorPreview" class="color-preview-box" style="background-color: #00ffff;"></div>
+                        <input type="color" id="bgColorInput" value="#00ffff" oninput="updateBgColor(this.value)">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 4: Font Size and Font Family Selectors -->
+            <div class="controls-row">
+                <div class="control-group">
+                    <label for="fontSizeInput">Font Size:</label>
+                    <input type="number" id="fontSizeInput" value="47" min="10" max="150" oninput="updateFontSize(this.value)">
+                </div>
+
+                <div class="control-group">
+                    <label for="fontFamilySelect">Font:</label>
+                    <select id="fontFamilySelect" onchange="updateFontFamily(this.value)">
+                        <option value="Georgia" selected>Georgia</option>
+                        <option value="Arial">Arial</option>
+                        <option value="Verdana">Verdana</option>
+                        <option value="Times New Roman">Times New Roman</option>
+                        <option value="Courier New">Courier New</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
